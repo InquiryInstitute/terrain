@@ -1,12 +1,12 @@
-# Castalia TerraLab
+# Castalia Automata
 
 ## Embodied AI Robotics Sandbox
 
 **An open research platform for embodied intelligence.**
 
-TerraLab is a physical robotics environment where autonomous construction vehicles learn to interact with real terrain.
+Automata is a physical robotics environment where autonomous construction vehicles learn to interact with real terrain.
 
-Inspired by robotics research labs and construction automation systems, TerraLab brings embodied AI experimentation into homes, schools, and research environments.
+Inspired by robotics research labs and construction automation systems, Automata brings embodied AI experimentation into homes, schools, and research environments.
 
 The platform combines:
 
@@ -30,7 +30,7 @@ Yet intelligence evolved through interaction with matter.
 
 *Digging. Moving. Building. Shaping terrain.*
 
-TerraLab explores a fundamental question:
+Automata explores a fundamental question:
 
 **What happens when AI learns by shaping the physical world?**
 
@@ -54,7 +54,7 @@ while AI models learn physics-aware planning.
 
 ## System Overview
 
-TerraLab integrates five layers:
+Automata integrates five layers:
 
 1. **Physical Terrain Environment**
 2. **Autonomous Robots**
@@ -190,7 +190,7 @@ Edge nodes run **micro-ROS**.
 The system uses ROS2 for coordination.
 
 ```
-TerraLab Server (ROS2)
+Automata Server (ROS2)
  ├ perception
  ├ terrain mapping
  ├ planning
@@ -204,7 +204,7 @@ TerraLab Server (ROS2)
 
 ### Central Compute
 
-TerraLab requires a central robotics server.
+Automata requires a central robotics server.
 
 **Recommended:** NVIDIA Jetson Orin Nano  
 
@@ -221,7 +221,7 @@ Capabilities:
 
 ## Perception System
 
-TerraLab includes an **overhead perception gantry**.
+Automata includes an **overhead perception gantry**.
 
 **Purpose:**
 
@@ -285,7 +285,7 @@ Isaac Sim
 
 ## Research Applications
 
-TerraLab enables experiments in:
+Automata enables experiments in:
 
 - **Embodied AI** — How intelligence emerges through physical interaction.
 - **Terrain manipulation** — Robots learn to modify terrain structures.
@@ -297,7 +297,7 @@ TerraLab enables experiments in:
 
 ## Remote Lab
 
-TerraLab can be exposed as a **remote robotics lab**.
+Automata can be exposed as a **remote robotics lab**.
 
 Students access robots through a **web interface**.
 
@@ -320,24 +320,24 @@ Cloud scheduler
  │
 ROS2 server
  │
-TerraLab robots
+Automata robots
 ```
 
 ---
 
 ## Certification Programs
 
-TerraLab supports certification tracks.
+Automata supports certification tracks.
 
-### TerraLab Level 1 — Robotics Foundations
+### Automata Level 1 — Robotics Foundations
 
 Topics: robot kinematics, sensors, microcontrollers, ROS basics.
 
-### TerraLab Level 2 — Embodied AI
+### Automata Level 2 — Embodied AI
 
 Topics: reinforcement learning, terrain perception, planning.
 
-### TerraLab Level 3 — Autonomous Construction
+### Automata Level 3 — Autonomous Construction
 
 Topics: multi-robot coordination, excavation planning, terrain modeling.
 
@@ -399,13 +399,13 @@ Students learn **robotics**, **AI**, **physics**, and **systems engineering** th
 
 Two product tiers.
 
-### TerraLab Home
+### Automata Home
 
 **Price target:** $599–$899  
 
 Includes: bed kit, one robot, sensors, software.
 
-### TerraLab Research
+### Automata Research
 
 **Price target:** $2,000–$4,000  
 
@@ -413,7 +413,7 @@ Includes: multiple robots, perception gantry, ROS2 stack, Isaac Sim integration.
 
 ### Open Research Platform
 
-TerraLab is intended to be:
+Automata is intended to be:
 
 - open source
 - extensible
@@ -429,10 +429,10 @@ AI must eventually understand **matter**, **physics**, **force**, and **terrain*
 
 Language alone is insufficient.
 
-TerraLab allows AI to learn **how the world pushes back**.
+Automata allows AI to learn **how the world pushes back**.
 
 ---
 
 ## Tagline
 
-**TerraLab: Where AI Learns to Move Earth.**
+**Automata: Where AI Learns to Move Earth.**

@@ -1,6 +1,6 @@
-# TerraLab Architecture
+# Automata Architecture
 
-System overview and data flow for the Castalia TerraLab embodied AI platform.
+System overview and data flow for the Castalia Automata embodied AI platform.
 
 ## Five-Layer System
 
@@ -37,7 +37,7 @@ flowchart TB
     end
 
     subgraph Layer4["4. AI Planning Stack"]
-        Server["TerraLab Server"]
+        Server["Automata Server"]
         Planning["Planning"]
         Coord["Robot Coordination"]
         Server --> Planning
@@ -61,7 +61,7 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    subgraph TerraLab_Server["TerraLab Server (Jetson)"]
+    subgraph Automata_Server["Automata Server (Jetson)"]
         Perception["/perception"]
         Terrain["/terrain_mapping"]
         Planning["/planning"]
@@ -83,7 +83,7 @@ flowchart LR
     Coord --> R3
     SimBridge -.->|"policy sync"| Coord
 
-    TerraLab_Server <-->|"WiFi DDS"| Robots
+    Automata_Server <-->|"WiFi DDS"| Robots
 ```
 
 ## Sim-to-Real Loop
@@ -104,7 +104,7 @@ flowchart TD
     Web["Web Interface"]
     Sched["Cloud Scheduler"]
     ROS["ROS2 Server"]
-    Lab["TerraLab Robots"]
+    Lab["Automata robots"]
 
     User -->|programs, models, experiments| Web
     Web --> Sched
@@ -125,10 +125,10 @@ flowchart LR
         I2C["I2C/SPI"]
     end
 
-    WiFi <-->|"DDS"| Server["TerraLab Server"]
+    WiFi <-->|"DDS"| Server["Automata Server"]
     PWM --> Motors["H-bridge / Motors"]
     I2C --> IMU["IMU"]
     I2C --> ToF["ToF / Depth"]
 ```
 
-See [TerraLab-Design.md](TerraLab-Design.md) for full specification.
+See [Automata-Design.md](Automata-Design.md) for full specification.
