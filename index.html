@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>terrAIn — Castalia Institute | Where AI Learns to Move Earth</title>
-  <meta name="description" content="STEM & homeschool robotics: real AI, real terrain. Build and program RC construction vehicles in a backyard bed. Robotics, coding, physics — hands-on.">
+  <meta name="description" content="An open robotics platform where RC construction vehicles learn to dig, grade, and haul on real terrain. A 4×8 ft bed of dirt becomes a backyard robotics lab.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -126,72 +126,140 @@
       <p class="logo">Castalia Institute <span>Atelier</span></p>
       <h1>terrAIn</h1>
       <p class="tagline">Where AI Learns to Move Earth.</p>
-      <p style="margin:0.5rem 0 0; font-size:0.9rem; color: var(--muted);">STEM · Homeschool · Backyard robotics</p>
+      <p style="margin:0.5rem 0 0; font-size:0.9rem; color: var(--muted);">Open-source robotics · Physical AI · Built for learners</p>
       <img src="assets/terrain-bed.png" alt="RC excavator, bulldozer, and dump truck in a raised garden bed with soil; overhead camera; greenhouse plants in background." class="hero-img">
     </div>
   </header>
 
   <section>
     <div class="wrap">
-      <h2>Built for STEM & Homeschool</h2>
-      <p class="lead">Real robotics and AI in your backyard — not a screen-only sim. terrAIn gives students something to <strong>build, program, and watch move real earth</strong>. One 4×8 ft bed becomes a robotics lab, a physics sandbox, and a garden.</p>
-      <p><strong>What students learn:</strong></p>
-      <ul class="learn-list">
-        <li><strong>Robotics & mechatronics</strong> — motors, sensors, ESP32, wireless control</li>
-        <li><strong>Coding & systems</strong> — ROS2, micro-ROS, coordination logic, optional simulation (Isaac Sim)</li>
-        <li><strong>Physics & terrain</strong> — force, friction, soil mechanics, why the world pushes back</li>
-        <li><strong>Planning & failure</strong> — iterate in the real world: dig, grade, haul; debug when it doesn’t work</li>
+      <h2>Robots That Move Dirt</h2>
+      <p class="lead">Take a 4×8 ft bed of soil. Add a fleet of RC construction vehicles — an excavator, a dump truck, a bulldozer, a loader. Wire them with ESP32 microcontrollers and connect them to a Jetson running ROS2. Now teach them to work together.</p>
+      <p>That's terrAIn. It's a robotics platform where the terrain is real, the physics is real, and the machines actually dig. An overhead camera watches the bed, maps the surface, and feeds the AI planner. The robots execute. Sometimes they get stuck. Sometimes the soil doesn't cooperate. That's the point.</p>
+      <p>The whole thing fits in a greenhouse, a shed, or a backyard. Same footprint as a raised garden bed — because it <em>is</em> one.</p>
+      <a href="https://github.com/InquiryInstitute/terrain" class="cta">View the repo →</a>
+      <a href="https://github.com/InquiryInstitute/terrain/blob/main/docs/terrain-design.md" class="cta secondary">Design doc</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Why Dirt Matters</h2>
+      <p class="vision-quote">Most AI today is disembodied. It reasons in text but has never pushed against anything. Intelligence didn't evolve in a chat window — it evolved through friction with the physical world.</p>
+      <p>terrAIn is our answer to that gap. When a student writes code and a machine digs a trench that collapses, they learn something no simulator can teach: the world pushes back. Soil has weight. Friction is real. Plans fail and you adapt.</p>
+      <p>For kids, that's where the learning lives — in the gap between what they planned and what actually happened. For researchers, it's a cheap, repeatable testbed for multi-agent coordination on deformable terrain. For everyone else, it's genuinely fun to watch tiny excavators move real earth.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>What's in the Stack</h2>
+      <img src="assets/terrain-hero.png" alt="Illustration: RC vehicles and overhead camera in a raised garden bed." class="section-img">
+      <p class="fig-cap">The terrain bed: a robotics sandbox at garden-bed scale.</p>
+      <ul class="layers">
+        <li><strong>The bed</strong> — 4×8 ft, filled with soil, sand, or gravel. Optional irrigation for agricultural experiments.</li>
+        <li><strong>The fleet</strong> — Huina 1:14 scale vehicles (excavator, dump truck, bulldozer, loader), each retrofitted with an ESP32-S3 and micro-ROS.</li>
+        <li><strong>The eye</strong> — overhead gantry with RGB and depth cameras for terrain mapping and vehicle tracking.</li>
+        <li><strong>The brain</strong> — Jetson Orin Nano running ROS2, handling perception, planning, and multi-robot coordination.</li>
+        <li><strong>The sim</strong> — NVIDIA Isaac Sim for training policies before they touch real dirt. Sim-to-real transfer.</li>
       </ul>
-      <p>Fits <strong>homeschool</strong> (flexible schedule, multi-age, one kit can serve the whole family), <strong>STEM programs</strong> (clubs, co-ops, project-based units), and <strong>makers</strong> who want serious hardware without a lab. Curriculum-friendly and open source.</p>
+      <a href="https://github.com/InquiryInstitute/terrain/blob/main/docs/architecture.md" class="cta secondary">Architecture diagrams →</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Who It's For</h2>
+      <p class="lead">terrAIn started as a research project and turned into something families, schools, and maker spaces actually want to use.</p>
+      <ul class="learn-list">
+        <li><strong>Homeschool families</strong> — flexible schedule, multi-age, one kit serves the whole household. Real engineering, not worksheets.</li>
+        <li><strong>STEM programs and co-ops</strong> — project-based units in robotics, coding, and physics. Curriculum-aligned and open source.</li>
+        <li><strong>Makers and hobbyists</strong> — serious hardware without needing a lab. ESP32, ROS2, Jetson — the full stack.</li>
+        <li><strong>Researchers</strong> — a low-cost, repeatable testbed for embodied AI, multi-agent coordination, and terrain manipulation.</li>
+      </ul>
       <div class="audience">
         <span>Homeschool</span>
         <span>STEM clubs</span>
         <span>Co-ops</span>
         <span>Backyard lab</span>
-        <span>Middle school+</span>
+        <span>Middle school +</span>
       </div>
-      <a href="https://github.com/InquiryInstitute/terrain/blob/main/docs/terrain-design.md" class="cta">See design & curriculum foundation →</a>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Embodied AI Meets the Garden</h2>
-      <p class="lead">An open platform where autonomous construction vehicles learn on real terrain — a 4×8 ft bed of soil, sand, or gravel. Same scale as a raised garden: dig, grade, haul, and level earth where the rubber meets the dirt.</p>
-      <p>terrAIn brings robotics and AI into the shed and the greenhouse. Robots prepare soil, shape terrain, and can run alongside planting experiments — while students (or researchers) learn physics, coordination, and systems thinking. Not a toy: real hardware, real code, real certification paths for those who want them.</p>
-      <a href="https://github.com/InquiryInstitute/terrain" class="cta">View repo & docs →</a>
-      <a href="https://github.com/InquiryInstitute/terrain/blob/main/docs/terrain-design.md" class="cta secondary">Design doc & curriculum foundation</a>
+      <h2>The Fleet</h2>
+      <p>Every vehicle starts as a stock Huina RC model — solid metal construction, good mechanics, affordable. We retrofit each one with an ESP32-S3 for wireless control and micro-ROS, so they talk to the Jetson base station as autonomous agents.</p>
+      <div class="product-line">
+        <div class="card">
+          <div class="product-img-wrap"><img src="assets/excavator.png" alt="Huina excavator 1550/1580" width="400" height="223"></div>
+          <h3>Excavator</h3>
+          <p>The workhorse. Huina 1550 or 1580 — tracked chassis, full arm articulation, bucket. Digs trenches, loads trucks, shapes terrain. This is probably the first vehicle you buy.</p>
+          <p class="price">$65 – $85</p>
+        </div>
+        <div class="card">
+          <div class="product-img-wrap"><img src="assets/dump-truck.png" alt="Huina dump truck" width="400" height="223"></div>
+          <h3>Dump Truck</h3>
+          <p>Pairs with the excavator. Hauls soil and gravel from point A to point B, articulated dump bed for unloading. The coordination between these two is where multi-agent planning gets interesting.</p>
+          <p class="price">$55 – $75</p>
+        </div>
+        <div class="card">
+          <div class="product-img-wrap"><img src="assets/bulldozer.png" alt="Huina bulldozer" width="400" height="223"></div>
+          <h3>Bulldozer</h3>
+          <p>Pushes material and levels surfaces. The blade makes it the best tool for grading — flattening terrain to a target elevation. Tracked, so it handles loose soil well.</p>
+          <p class="price">$60 – $80</p>
+        </div>
+        <div class="card">
+          <div class="product-img-wrap"><img src="assets/loader.png" alt="Huina loader" width="400" height="223"></div>
+          <h3>Loader</h3>
+          <p>Front-loading bucket on a wheeled chassis. Good for scooping and placing material. Faster than the excavator for bulk moves, less precise for detail work.</p>
+          <p class="price">$55 – $75</p>
+        </div>
+        <div class="card base">
+          <div class="product-img-wrap"><img src="assets/jetson-base.png" alt="Jetson base station" width="400" height="223"></div>
+          <h3>Jetson Base Station</h3>
+          <p>NVIDIA Jetson Orin Nano running ROS2. Handles perception from the overhead cameras, builds terrain maps, coordinates the fleet, and runs the AI planner. Optional overhead gantry kit included in the Research tier.</p>
+          <p class="price">$499 – $599</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Why This Matters</h2>
-      <p class="vision-quote">Most AI today is disembodied. Language models reason in text but have no physical understanding of the world. Yet intelligence evolved through interaction with matter — digging, moving, building, shaping terrain.</p>
-      <p>For STEM and homeschool, that’s the hook: <strong>AI and robotics that touch the real world.</strong> Kids see cause and effect — code and soil, planning and terrain. terrAIn asks: What happens when we learn by shaping the physical world? In a raised bed or a test arena, robots move earth and students learn how the world pushes back.</p>
+      <h2>Controller: Atlas DS</h2>
+      <p class="lead">terrAIn uses the <strong>Atlas DS</strong> as its controller — a dual-screen handheld that gives you both the bird's eye and the driver's seat at the same time.</p>
+      <p>Bottom screen shows the overhead terrain map. Top screen shows the camera feed from whichever vehicle you're controlling. You can plan on the map view, then switch to manual driving, or just watch the autonomy run. One device handles teleop, monitoring, and field configuration for the entire fleet.</p>
+      <p>Students see both perspectives — the strategic overhead view and the robot's-eye view — which makes the gap between planning and execution visceral instead of abstract.</p>
+      <a href="https://atlas.inquiry.institute" class="cta secondary">Atlas DS docs and firmware →</a>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>System at a Glance</h2>
-      <ul class="layers">
-        <li>Physical terrain — 4×8 ft bed (greenhouse- and garden-bed scale), soil/sand/gravel, optional irrigation</li>
-        <li>Autonomous robots — Huina excavators (1550/1580), dump truck, bulldozer, loader; ESP32-S3, micro-ROS</li>
-        <li>Perception — overhead gantry, RGB/depth, terrain mapping</li>
-        <li>AI planning — ROS2 server (Jetson), coordination, deployment</li>
-        <li>Simulation — NVIDIA Isaac Sim for training and sim-to-real transfer</li>
-      </ul>
-      <img src="assets/terrain-hero.png" alt="Illustration: RC vehicles and overhead camera in a raised garden bed." class="section-img">
-      <p class="fig-cap">Concept: terrain bed as robotics sandbox — same footprint as a garden bed.</p>
-      <a href="https://github.com/InquiryInstitute/terrain/blob/main/docs/architecture.md" class="cta secondary">Architecture diagrams</a>
+      <h2>Pick Your Scale</h2>
+      <p>Two tiers. Start with Home if you're a family or a small group. Go Research if you want the full fleet, simulation, and multi-robot projects.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>terrAIn Home</h3>
+          <p>One bed, one vehicle (excavator or truck), base station or single-node setup, sensors, and all the software. Everything you need for a backyard robotics lab. Fits a shed, patio, or greenhouse. One kit, the whole family.</p>
+          <p class="price">$599 – $899</p>
+        </div>
+        <div class="card">
+          <h3>terrAIn Research</h3>
+          <p>Jetson base station, the full fleet (excavator, truck, dozer, loader), perception gantry, ROS2 stack, and Isaac Sim integration. Built for STEM clubs, schools, and anyone running a serious multi-robot curriculum.</p>
+          <p class="price">$2,000 – $4,000</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Support the Platform</h2>
-      <p>Open source and built for learners. Your support funds <strong>hardware kits for schools and homeschool co-ops</strong>, curriculum docs, and certification paths so more students get hands-on robotics and AI — not just screens.</p>
+      <h2>Support the Build</h2>
+      <p>terrAIn is open source. Everything — firmware, ROS2 packages, curriculum docs, Isaac Sim scenes — lives on GitHub. We're building this in the open because the best robotics education shouldn't be locked behind a vendor.</p>
+      <p>Your support funds hardware kits for schools and homeschool co-ops that can't afford the upfront cost, plus documentation and certification paths so students can show what they've built.</p>
       <p>
         <span class="badge">OpenCollective</span>
         <span class="badge">GitHub Sponsors</span>
@@ -201,80 +269,12 @@
     </div>
   </section>
 
-  <section>
-    <div class="wrap">
-      <h2>Product Line</h2>
-      <p>All vehicles are based on <strong>Huina</strong> RC construction models — excavator (1550/1580), dump truck, bulldozer, loader — plus the Jetson base station. Mix and match for your bed size, budget, and whether you’re running a home lab or a STEM program.</p>
-      <div class="product-line">
-        <div class="card">
-          <div class="product-img-wrap"><img src="assets/excavator.png" alt="Huina excavator 1550/1580" width="400" height="223"></div>
-          <h3>Huina Excavator</h3>
-          <p>1550 / 1580. Tracked, arm + bucket. Dig, trench, load. 1:14 scale.</p>
-          <p class="price">$65 – $85</p>
-        </div>
-        <div class="card">
-          <div class="product-img-wrap"><img src="assets/dump-truck.png" alt="Huina dump truck" width="400" height="223"></div>
-          <h3>Huina Dump Truck</h3>
-          <p>Haul soil, gravel. Articulated dump bed. Pairs with excavator.</p>
-          <p class="price">$55 – $75</p>
-        </div>
-        <div class="card">
-          <div class="product-img-wrap"><img src="assets/bulldozer.png" alt="Huina bulldozer" width="400" height="223"></div>
-          <h3>Huina Bulldozer</h3>
-          <p>Tracked dozer, blade. Grade, level, push. Terrain shaping.</p>
-          <p class="price">$60 – $80</p>
-        </div>
-        <div class="card">
-          <div class="product-img-wrap"><img src="assets/loader.png" alt="Huina loader" width="400" height="223"></div>
-          <h3>Huina Loader</h3>
-          <p>Front loader / wheel loader. Load, carry, place material.</p>
-          <p class="price">$55 – $75</p>
-        </div>
-        <div class="card base">
-          <div class="product-img-wrap"><img src="assets/jetson-base.png" alt="Jetson base station" width="400" height="223"></div>
-          <h3>Jetson Base Station</h3>
-          <p>NVIDIA Jetson Orin Nano. ROS2, perception, terrain mapping, multi-robot coordination. Optional overhead gantry kit.</p>
-          <p class="price">$499 – $599</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2>Controllers: Atlas DS / Tricorder</h2>
-      <p class="lead">terrAIn uses <strong>Atlas DS</strong> and <strong>Tricorder</strong> as the controller platform — the dual-screen layout is ideal: <strong>bottom screen = bed view</strong> (overhead terrain map), <strong>top screen = vehicle view</strong> (camera feed from the robot).</p>
-      <p>One device gives you the big picture and the driver’s seat: plan on the bed map below, drive or monitor from the vehicle camera above. Ideal for <strong>teaching teleop and autonomy</strong> — students see both the overhead strategy view and the robot’s perspective. Manual override, teleop, and field configuration in one handheld. Same stack across the terrAIn product line.</p>
-      <p><a href="https://atlas.inquiry.institute">atlas.inquiry.institute</a> — docs, firmware, and Tricorder app.</p>
-      <a href="https://atlas.inquiry.institute" class="cta secondary">Atlas DS / Tricorder →</a>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2>Product Tiers</h2>
-      <p>Start small and grow. <strong>terrAIn Home</strong> is built for families, homeschool, and backyard STEM — one bed, one robot, one base. <strong>terrAIn Research</strong> scales to co-ops, clubs, and labs that want a full fleet and simulation.</p>
-      <div class="cards">
-        <div class="card">
-          <h3>terrAIn Home</h3>
-          <p><strong>Your backyard STEM lab.</strong> One bed kit, one robot (excavator or truck), base station or single-node setup, sensors, software. Fits a shed, patio, or greenhouse. Multi-age friendly; one kit can serve the whole family or a small co-op.</p>
-          <p class="price">$599 – $899</p>
-        </div>
-        <div class="card">
-          <h3>terrAIn Research</h3>
-          <p><strong>Full robotics program.</strong> Jetson base station, multiple robots (excavator, truck, dozer, loader), perception gantry, ROS2 stack, Isaac Sim. For STEM clubs, schools, and curricula that want simulation and multi-robot projects.</p>
-          <p class="price">$2,000 – $4,000</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer>
     <div class="wrap">
-      <p><strong>Castalia terrAIn</strong> — Inquiry Institute</p>
+      <p><strong>terrAIn</strong> — Castalia Institute</p>
       <p>
         <a href="https://github.com/InquiryInstitute/terrain">GitHub</a> ·
-        <a href="https://atlas.inquiry.institute">Atlas DS / Tricorder</a> ·
+        <a href="https://atlas.inquiry.institute">Atlas DS</a> ·
         <a href="https://github.com/InquiryInstitute/terrain/blob/main/docs/terrain-design.md">Design doc</a> ·
         <a href="https://github.com/InquiryInstitute/terrain/blob/main/docs/architecture.md">Architecture</a> ·
         <a href="https://github.com/InquiryInstitute/terrain/blob/main/docs/IsaacSim-Roadmap.md">Isaac Sim roadmap</a>
